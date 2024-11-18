@@ -25,19 +25,19 @@ app.listen(port, () => {
 });
 
 
-// app.get('/test', async (req, res) => {
-//     res.send("Hello World");
-//     let songs = await SongModel.getAllRecords();
-//     let artists = await ArtistModel.getAllArtists();
-//     let albums = await AlbumModel.getAllAlbums();
-//     console.log(songs);
-//     console.log(artists);
-//     console.log(albums);
+app.get('/test', async (req, res) => {
+     res.send("Hello World");
+     let songs = await SongModel.getAllRecords();
+     let artists = await ArtistModel.getAllArtists();
+     let albums = await AlbumModel.getAllAlbums();
+     console.log(songs);
+     console.log(artists);
+     console.log(albums);
     
-// })
-// const mySong = new song("Bohemian Rhapsody", "Queen");
-// app.get('/songs', async (req, res) => {
-//     res.send(mySong.present())
-//     console.log(Date.now());
-// });
+ })
+ const mySong = new song("Bohemian Rhapsody", "Queen");
+ app.get('/songs', async (req, res) => {
+     res.send(mySong.present())
+     console.log(Date.now());
+ });
 
